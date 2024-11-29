@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "newArchEnabled": true,
+    "name": "Wast.Ed",
+    "slug": "Wasted",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": [
+      "wasted"
+    ],
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000"
+      },
+      "package": "com.wasted.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+      "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiYWJkdWxzIiwiYSI6ImNtM2NzNDZpbTA2cG4ya3M5MDR6NG0xdTIifQ.t2H_7Qwyq1ob-P9EXo6g6w",
+          "RNMapboxMapsVersion": "10.*"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Show current location on map."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ddfa4196-cdc7-4b12-ad7f-719a2c4e6a11"
+      }
+    }
+  }
+}
